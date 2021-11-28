@@ -36,3 +36,11 @@ Then, some data transformation is performed and the result is loaded in a Postgr
 # How to run the ETL
 - Step 1 - Execute "python create_tables.py" (to create all needed tables in the database) 
 - Step 2 - Execute "python etl.py" (to execute the ETL itself)
+
+# Explanation of the files in the repository
+- data: Folder containing JSON files to be processed in the ETL. 
+- create_tables.py: Python file containing implemented functions responsible for the SQL tables creation and deletion. 
+- etl.ipynb: Jupyter Notebook file used to implement the initial version of the solution and make test for the ETL process. 
+- etl.py: Python file containing the implementation of the ETL itself, i.e. data related to song and log JSON files being extracted, transformed and loaded as needed. 
+- sql_queries.py: Python file containing all SQL queries needed for the implemented solution (CRUD in general). 
+- test.ipynb: Jupyter Notebook file used to perform tests and validations during the implementation. 
